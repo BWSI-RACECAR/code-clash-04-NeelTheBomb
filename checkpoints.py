@@ -5,13 +5,14 @@ class Solution:
             #return type: int
             i = 0
             #TODO: Write code below to returnn an int with the solution to the prompt.
-            while (i <= (len(checkpoints)-1)):
+            while (i < (len(checkpoints)-1)):
                 checkpoint = checkpoints[i]
                 if (checkpoint > checkpoints[i + 1]):
                      checkpoints[i] = checkpoints[i+1]
                      checkpoints[i+1] = checkpoint
                      i = i-1
-                i = i+1
+                else:
+                    i = i+1
             greatest = 0    
             for i in range(len(checkpoints)-1):
                 if (checkpoints[i+1]-checkpoints[i]) > greatest:
