@@ -16,9 +16,9 @@ class Solution:
                     i = i+1
             print(checkpoints)
             greatest = 0    
-            for i in range(len(checkpoints)):
+            for i in range(len(checkpoints)-1):
                 if ((checkpoints[i+1]-checkpoints[i]) > greatest):
-                     greatest = checkpoints[i]
+                     greatest = checkpoints[i+1]-checkpoint[i]
             print(greatest)
                      
             return greatest
