@@ -5,7 +5,7 @@ class Solution:
             #return type: int
             i = 0
             #TODO: Write code below to returnn an int with the solution to the prompt.
-            while (i <= len(checkpoints))
+            while (i <= len(checkpoints)):
                 checkpoint = checkpoints[i]
                 if (checkpoint > checkpoint[i + 1]):
                      checkpoint[i] = checkpoint[i+1]
