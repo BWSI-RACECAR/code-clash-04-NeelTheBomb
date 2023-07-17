@@ -16,7 +16,7 @@ class Solution:
                     i = i+1
             print(checkpoints)
             greatest = 0    
-            for i in range(len(checkpoints)-1):
+            for i in range(len(checkpoints)):
                 if ((checkpoints[i+1]-checkpoints[i]) > greatest):
                      greatest = checkpoints[i]
             print(greatest)
