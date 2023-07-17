@@ -10,7 +10,6 @@ class Solution:
                 if (checkpoint > checkpoints[i + 1]):
                      checkpoints[i] = checkpoints[i+1]
                      checkpoints[i+1] = checkpoint
-                     i = i-1
                 else:
                     i = i+1
             greatest = 0    
