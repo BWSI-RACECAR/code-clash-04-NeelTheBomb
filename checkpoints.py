@@ -7,9 +7,9 @@ class Solution:
             #TODO: Write code below to returnn an int with the solution to the prompt.
             while (i <= len(checkpoints)):
                 checkpoint = checkpoints[i]
-                if (checkpoint > checkpoint[i + 1]):
-                     checkpoint[i] = checkpoint[i+1]
-                     checkpoint[i+1] = checkpoint
+                if (checkpoint > checkpoints[i + 1]):
+                     checkpoint[i] = checkpoints[i+1]
+                     checkpoints[i+1] = checkpoint
                      i = i-1
                 i = i+1
             greatest = 0    
